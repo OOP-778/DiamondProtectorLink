@@ -58,19 +58,19 @@ func main() {
 	channel := pubsub.Channel()
 
 	go func() {
-		for true {
-			for cd := range channel {
-				var command = cd.Payload
-				_, errOut, err := executeCommand(command)
-				if err != nil {
-					return
-				}
+		for cd := range channel {
+			var command = cd.Payload
+			_, errOut, err := executeCommand(command)
+			if err != nil {
+				return
+			}
 
-				if len(errOut) != 0 {
-					log.Println("Error while executing command " + command)
-					log.Println(errOut)
-					log.Println(err)
-				}
+			log.Println("Executed")
+
+			if len(errOut) != 0 {
+				log.Println("Error while executing command " + command)
+				log.Println(errOut)
+				log.Println(err)
 			}
 		}
 	}()

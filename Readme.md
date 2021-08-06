@@ -1,3 +1,7 @@
-##Installation Guide
+## Installation Guide
 
-Run 
+## Requirements
+- Redis Server
+- Sudo access (root)
+
+Step 1) 
