@@ -7,7 +7,7 @@
 ### Step 1 
 Download installation script
 ``
-curl -K https://raw.githubusercontent.com/OOP-778/DiamondProtectorLink/master/install.sh >> DiamondProtectorLink.sh
+curl https://raw.githubusercontent.com/OOP-778/DiamondProtectorLink/master/install.sh -o DiamondProtectorLink.sh
 ``
 
 ### Step 2
