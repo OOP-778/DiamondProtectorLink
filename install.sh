@@ -40,6 +40,7 @@ then
   systemctl stop DiamondProtectorLink
 fi;
 
+go get
 go build
 
 echo "Built successfully."
